@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Website</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          #ff99cc,
+          #ff6699
+        ); /* Pink/Dark Pink gradient background */
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        background: url(IMAGES/IMG-20220813-WA0002.jpg);
+      }
+      header {
+        padding: 20px;
+        background-color: #c40b52;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .falling-image {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        animation: a 10s linear infinite;
+      }
+
+      @keyframes a {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(8000%);
+        }
+      }
+
+      h1 {
+        color: #800221; /* Dark Pink text color */
+      }
+
+      section {
+        padding: 20px;
+        color: #fdfdfd;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: #cf08768e;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        text-align: left;
+      }
+
+      footer {
+        background-color: #750101;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .explosion-image {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        pointer-events: none; /* Prevent clicking on explosion images */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>for You, Maleen</h1>
+    </header>
+
+    <section>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220722-WA0031.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "Love is not about how many days, months, or years you have been
+          together. Love is about how much you love each other every single
+          day."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220722-WA0037.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "In all the world, there is no heart for me like yours. In all the
+          world, there is no love for you like mine."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220722-WA0078.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "Love recognizes no barriers. It jumps hurdles, leaps fences,
+          penetrates walls to arrive at its destination full of hope."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220813-WA0000.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "The best and most beautiful things in this world cannot be seen or
+          even heard but must be felt with the heart."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220813-WA0001.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>"To love and be loved is to feel the sun from both sides."</p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220813-WA0003.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "Love is when the other person's happiness is more important than your
+          own."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220813-WA0004.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>Short text about the second moment</p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220813-WA0005.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "You know you're in love when you can't fall asleep because reality is
+          finally better than your dreams."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220813-WA0012.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          "In the language of love, every text message is a love letter, and
+          every emoji tells a story and our chat has 1gb of emoji- Sam"
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220814-WA0035.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          Teenage love is like a wildfire—it's intense, unpredictable, and a
+          little bit reckless.-"
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220814-WA0070.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          “Obstacles do not exist to be surrendered to, but only to be broken.-
+          some austrian painter”
+        </p>
+      </div>
+
+      <div class="card">
+        <img
+          src="IMAGES/IMG-20220814-WA0117.jpg"
+          alt="Image 2"
+          style="width: 100%"
+        />
+        <p>
+          “Being in a loving relationship is absolutely and utterly a beautiful
+          thing.” – Andrew Tate
+        </p>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </section>
+    <button id="toggleLoveMode" onclick="goToAnotherPage()">
+      Love is in the air mode
+    </button>
+
+    <script>
+      function goToAnotherPage() {
+        // Change the URL to the desired webpage
+        window.location.href = "index1.html"; // Replace with your desired URL
+      }
+      function createFallingImages(x, y, isExploding = false) {
+        const numImages = isExploding ? 10 : 1;
+
+        for (let i = 0; i < numImages; i++) {
+          const fallingImage = document.createElement("img");
+          fallingImage.className = isExploding
+            ? "explosion-image"
+            : "falling-image";
+          fallingImage.src = "love-heart-romantic-vector-23523440.jpg";
+          document.body.appendChild(fallingImage);
+
+          const angle = isExploding
+            ? (Math.random() * Math.PI) / 2 + Math.PI / 4
+            : Math.PI / 2;
+
+          const speed = Math.random() * 5 + 3;
+
+          const deltaX = Math.cos(angle) * speed;
+          const deltaY = Math.sin(angle) * speed;
+
+          animateFallingImage(fallingImage, x, y, deltaX, deltaY, isExploding);
+        }
+      }
+
+      function animateFallingImage(element, x, y, deltaX, deltaY, isExploding) {
+        function animate() {
+          const newX = parseFloat(element.style.left || x) + deltaX;
+          const newY = parseFloat(element.style.top || y) + deltaY;
+
+          const footer = document.querySelector("footer");
+          const footerRect = footer.getBoundingClientRect();
+          if (newY + element.clientHeight < footerRect.top) {
+            element.style.left = `${newX}px`;
+            element.style.top = `${newY}px`;
+            requestAnimationFrame(animate);
+          } else {
+            element.remove();
+          }
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      function explodeImage(event) {
+        const clickX = event.clientX;
+        const clickY = event.clientY;
+
+        createFallingImages(clickX, clickY, true);
+      }
+
+      document.querySelectorAll(".card img").forEach((img) => {
+        img.addEventListener("click", explodeImage);
+      });
+
+      function createNormalFallingImage() {
+        const leftPosition = Math.random() * window.innerWidth;
+
+        createFallingImages(leftPosition, 0, false);
+      }
+
+      setInterval(createNormalFallingImage, 300);
+    </script>
+
+    <footer>
+      <p>My gift for you</p>
+    </footer>
+  </body>
+</html>
